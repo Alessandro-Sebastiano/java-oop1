@@ -1,6 +1,5 @@
 package org.lessons.java.bank;
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class Bank {
@@ -20,14 +19,14 @@ public class Bank {
 
         boolean exit = true;
 
-        while(exit) {
+        while (exit) {
 
-        System.out.println("Scegli un opzione per continuare: ");
-        System.out.println("1 Deposita");
-        System.out.println("2 Preleva");
-        System.out.println("3 Esci");
+            System.out.println("Scegli un opzione per continuare: ");
+            System.out.println("1 Deposita");
+            System.out.println("2 Preleva");
+            System.out.println("3 Esci");
 
-        int option = Integer.parseInt(input.nextLine());
+            int option = Integer.parseInt(input.nextLine());
 
             switch (option) {
 
@@ -63,6 +62,8 @@ public class Bank {
 
             }
         }
+
+        input.close();
     }
 }
 
